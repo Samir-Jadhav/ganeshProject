@@ -17,6 +17,10 @@ public class LoginTest extends BaseClass {
 		login.login();
 		
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM");
+		
+	
+		Assert.assertEquals(driver.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 	}
+	
 
 }
